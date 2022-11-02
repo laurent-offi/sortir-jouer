@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectez-vous</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/breakpoint.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="login-container">
+
+            <div class="login-box">
+
+                <div class="form-container">
+
+                    <img src="assets/medias/login.svg" alt="Login-icon">
+
+                    <h1>Se connecter</h1>
+
+                    <form method="post">
+
+                        <label for="email">Nom d'utilisateur :</label>
+                        <input type="username" name="username" id="username" required>
+                        <label for="password">Mot de passe :</label>
+                        <div class="password-container">
+                            <input type="password" name="password" id="password" required>
+                            <div class="password-eye-container">
+                                <i class="fas fa-eye-slash" id="togglePassword"></i>
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <button type="submit"><i class="fas fa-sign-in-alt"></i> Se connecter</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/view-password.js"></script>
+
+</html>
