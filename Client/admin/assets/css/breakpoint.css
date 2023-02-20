@@ -1,0 +1,31 @@
+@media screen and (max-width:980px) {
+ 
+    .sidebar .sidebar-container li span {
+        display: none;
+    }
+
+    .sidebar .sidebar-container li i {
+        font-size: 2rem;
+        background-color: #26262b;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        width: 4rem;
+        text-align: center;
+
+    }
+
+    .login-box {
+        width: 100%!important;
+        color: white;
+    }
+
+    .form-container form button {
+        color: #f7f7f7;
+    }
+
+    .form-container form button {
+        width: 70%!important;
+    }
+
+}

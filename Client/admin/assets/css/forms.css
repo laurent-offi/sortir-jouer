@@ -1,0 +1,4 @@
+form.no-flex {
+    display: flex;
+    flex-direction: column!important;
+}

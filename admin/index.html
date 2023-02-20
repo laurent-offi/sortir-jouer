@@ -81,7 +81,7 @@
                         </thead>
 
 
-                        <tbody>
+                        <tbody id="users">
 
                             <tr>
                                 <td>Eric</td>
@@ -90,7 +90,6 @@
                                 <td id="action">
                                     <i class="fas fa-ellipsis-v"></i>
                                 </td>
-
                             </tr>
 
 
@@ -105,9 +104,61 @@
         </div>
     </header>
 
-
-
-
 </body>
 
+
+<script>
+
+    const adresse_serveur_api = 'http://localhost:2004';
+ 
+    async function remplissage_utilisateurs() 
+    {
+       
+        // nom de l'api
+        let nom_de_l_api = "/users"
+
+        // adresse complete appel api
+        let url = `${adresse_serveur_api}${nom_de_l_api}`;
+
+        // appel de l'api
+        let response = await fetch(url, 
+        {
+            method: 'GET',
+            headers: 
+            {
+                'Content-Type': 'application/json'
+            }
+        
+        });
+
+        // analyse si l'api répond
+        if (!response.ok) 
+        {
+            throw new Error('Network response was not ok');
+        }
+
+        // stockage de la réponse
+        let tableau_json = await response.json();
+
+        // affichage de la réponse
+        document.getElementById("users").innerHTML = "";
+        message_retour = "";
+        tableau_json.forEach(variable_json => {
+            message_retour = message_retour + "<tr id=`" + variable_json.idUsers + "` >"
+                message_retour = message_retour + "<td>" + variable_json.userName + "</td>"
+                message_retour = message_retour + "<td>" + variable_json.emailAddress + "</td>"
+                message_retour = message_retour + "<td>" + variable_json.role_usersRole + "</td>"
+                message_retour=message_retour+' <td id="action"> '+
+                                    '<i class="fas fa-ellipsis-v"></i>'+
+                               '</td>'
+                message_retour = message_retour + "</tr>";
+        });
+
+        document.getElementById("users").innerHTML = message_retour;
+
+    }
+
+ remplissage_utilisateurs();
+
+</script>
 </html>

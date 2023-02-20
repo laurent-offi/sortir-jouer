@@ -1,0 +1,30 @@
+@media screen and (max-width:980px) {
+ 
+    *[class^="col-"] {
+        width: 100%!important;
+        justify-content: center;
+        
+    }
+
+    nav img {
+        width: 3rem!important;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-container img {
+        margin-top: 2rem;
+    }
+
+    .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .row p {
+        margin: 2rem 0 1rem 0;
+    }
+}

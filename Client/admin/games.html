@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des jeux</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/breakpoint.css">
+    <link rel="stylesheet" href="assets/css/table.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="container">
+
+            <div class="header-container">
+
+                <a href="/">Retour au site</a>
+
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="sidebar">
+
+                <div class="container">
+
+                    <div class="sidebar-container">
+
+                        <img id="logo" src="assets/medias/logo.png" alt="Logo">
+
+                        <ul>
+
+                            <li><a href="/"><i class="fas fa-users-cog"></i> <span>Gestion des
+                                        utilisateurs</span></a></li>
+                            <li class="active"><a href="games.html"><i class="fas fa-chess-rook-alt"></i> <span>Gestion
+                                        des jeux</span></a></li>
+                            <li><a href="sessions.html"><i class="fas fa-clock"></i> <span>Gestion des
+                                        séances</span></a></li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section>
+
+                <div class="container overflow">
+
+                    <a class="create" href="/">Ajouter</a>
+
+                    <table class="styled-table">
+
+                        <thead>
+
+                            <tr>
+                                <td>Checkbox</td>
+                                <td>Nom</td>
+                                <td>Image</td>
+                                <td><label for="mecanisme-select">Mécanisme(s)</label>
+                                    <select name="mecanisme" id="mecanisme-select">
+                                        <option value="">--Mécanisme(s)--</option>
+                                        <option value="action">Actions</option>
+                                        <option value="adresse">Adresse</option>
+                                        <option value="affrontement">Affrontement</option>
+                                        <option value="ambience">Ambiance</option>
+                                        <option value="application mobile">Application mobile</option>
+                                        <option value="asymétrie">Asymétrie</option>
+                                        <option value="blocs">Blocs</option>
+                                        <option value="bluff">Bluff</option>
+                                        <option value="calcul">Calcul</option>
+                                        <option value="card_driven">Card Driven</option>
+                                        <option value="cartes">Cartes</option>
+                                        <option value="casse-tetes">Casse-tête</option>
+                                        <option value="classement">Classement</option>
+                                        <option value="collection">Collection</option>
+                                        <option value="combinaison">Combinaison</option>
+                                        <option value="commerce">Commerce</option>
+                                        <option value="communication">Communication</option>
+                                        <option value="connaissance">Connaissance</option>
+                                        <option value="connexion">Connexion</option>
+                                        <option value="conquete">Conquête</option>
+                                        <option value="construction">Construction</option>
+                                        <option value="controle_de_territoire">Contrôle de territoire</option>
+                                        <option value="cooperatif">Coopératif</option>
+                                        <option value="coordination">Coordination</option>
+                                        <option value="couleurs">Couleurs</option>
+                                        <option value="course">Course</option>
+                                        <option value="creativite">Créativité</option>
+                                        <option value="deck_building">Deck Building</option>
+                                        <option value="deduction">Déduction</option>
+                                        <option value="defausse">Défausse</option>
+                                        <option value="defis">Défis</option>
+                                        <option value="des">Dés</option>
+                                        <option value="developpement">Développement</option>
+                                        <option value="dexterite">Dextérité</option>
+                                        <option value="draft">Draft</option>
+                                        <option value="draw_and_write">Draw and Write</option>
+                                        <option value="echanges">Échanges</option>
+                                        <option value="echec">Echec</option>
+                                        <option value="encheres">Enchères</option>
+                                        <option value="enigme">Énigme</option>
+                                        <option value="equipe">Équipe</option>
+                                        <option value="escape_game">Escape Game</option>
+                                        <option value="evolutif">Évolutif</option>
+                                        <option value="exploration">Exploration</option>
+                                        <option value="expression">Expression</option>
+                                        <option value="figurines">Figurines</option>
+                                        <option value="gages">Gages</option>
+                                        <option value="gestion">Gestion</option>
+                                        <option value="hasard">Hasard</option>
+                                        <option value="imitation">Imitation</option>
+                                        <option value="improvisation">Improvisation</option>
+                                        <option value="intrigue">Intrigue</option>
+                                        <option value="legacy">Legacy</option>
+                                        <option value="lettres">Lettres</option>
+                                        <option value="livraison">Livraison</option>
+                                        <option value="logique">Logique</option>
+                                        <option value="magnetique">Magnétique</option>
+                                        <option value="majorite">Majorité</option>
+                                        <option value="memoire">Mémoire</option>
+                                        <option value="mime">Mime</option>
+                                        <option value="modulable">Modulable</option>
+                                        <option value="narrativisme">Narrativisme</option>
+                                        <option value="negociation">Négociation</option>
+                                        <option value="objectifs_secrets">Objectifs secrets</option>
+                                        <option value="observation">Observation</option>
+                                        <option value="olfactif">Olfactif</option>
+                                        <option value="orientation">Orientation</option>
+                                        <option value="ouie">Ouïe</option>
+                                        <option value="parcours">Parcours</option>
+                                        <option value="paris">Paris</option>
+                                        <option value="placement">Placement</option>
+                                        <option value="placement_douvriers">Placement d'ouvriers</option>
+                                        <option value="plis">Plis</option>
+                                        <option value="points_daction">Points d'action</option>
+                                        <option value="pouvoirs">Pouvoirs</option>
+                                        <option value="programmation">Programmation</option>
+                                        <option value="puzzles">Puzzles</option>
+                                        <option value="rapidite">Rapidité</option>
+                                        <option value="reflexes">Réflexes</option>
+                                        <option value="ressources">Ressources</option>
+                                        <option value="risque">Risque</option>
+                                        <option value="roles">Rôles</option>
+                                        <option value="roll_and_write">Roll and Write</option>
+                                        <option value="scenario">Scénario</option>
+                                        <option value="simulation">Simulation</option>
+                                        <option value="simultaneite">Simultanéité</option>
+                                        <option value="solitaire">Solitaire</option>
+                                        <option value="stop_ou_encore">Stop ou encore</option>
+                                        <option value="tactile">Tactile</option>
+                                        <option value="temps_reel">Temps réel</option>
+                                        <option value="trains">Trains</option>
+                                        <option value="tuiles">Tuiles</option>
+                                        <option value="vocabulaire">Vocabulaire</option>
+                                        <option value="votes">Votes</option>
+                                        <option value="wargame">Wargame</option>
+                                        <option value="workers">Workers</option>
+                                    </select>
+                                </td>
+                                <td><label for="language-select">Langue(s)</label>
+                                    <select name="language" id="language-select">
+                                        <option value="">--Langue(s)--</option>
+                                        <option value="german">Allemand</option>
+                                        <option value="english">Anglais</option>
+                                        <option value="arab">Arabe</option>
+                                        <option value="spanish">Espagnol</option>
+                                        <option value="french">Français</option>
+                                        <option value="hindi">Hindi</option>
+                                        <option value="mandarin">Mandarin</option>
+                                        <option value="portuguese">Portugais</option>
+                                        <option value="russian">Russe</option>
+                                    </select>
+                                </td>
+                                <td><label for="age-select">Âge</label>
+                                    <select name="age" id="age-select">
+                                        <option value="">--Âge--</option>
+                                        <option value="3+">3+</option>
+                                        <option value="4+">4+</option>
+                                        <option value="5+">5+</option>
+                                        <option value="6+">6+</option>
+                                        <option value="7+">7+</option>
+                                        <option value="8+">8+</option>
+                                        <option value="9+">9+</option>
+                                        <option value="10+">10+</option>
+                                        <option value="11+">11+</option>
+                                        <option value="12+">12+</option>
+                                        <option value="13+">13+</option>
+                                        <option value="14+">14+</option>
+                                        <option value="15+">15+</option>
+                                        <option value="16+">16+</option>
+                                        <option value="17+">17+</option>
+                                        <option value="18+">18+</option>
+                                    </select>
+                                </td>
+                                <td><label for="duree-select">Durée</label>
+                                    <select name="duree" id="duree-select">
+                                        <option value="">--Durée--</option>
+                                        <option value="-30mn">-30mn</option>
+                                        <option value="30mn">30mn</option>
+                                        <option value="1h">1h</option>
+                                        <option value="2h">2h</option>
+                                        <option value="3h">3h</option>
+                                        <option value="4h">4h</option>
+                                        <option value="5h">5h</option>
+                                    </select>
+                                </td>
+                                <td><label for="player-select">Joueur(s)</label>
+                                    <select name="player" id="player-select">
+                                        <option value="">--Joueur(s)--</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="10+">10+</option>
+                                    </select>
+                                </td>
+                                <td>Action</td>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tableau_jeux">
+
+                            <tr>
+                                <td class="Checkbox"><input type="checkbox"></td>
+                                <td class="Nom">Attrape Rêves</td>
+                                <td class="Image"><img src="./assets/medias/attrape_reves.png" height="100"></td>
+                                <td class="Catégorie">Stratégie</td>
+                                <td class="Langue">Français</td>
+                                <td class="Âge">4+</td>
+                                <td class="Durée">15mn</td>
+                                <td class="Joueur">2-4</td>
+                                <td id="action1"><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="Checkbox"><input type="checkbox"></td>
+                                <td class="Nom">Colt Express</td>
+                                <td class="Image"><img src="./assets/medias/colt_express.png" height="100"></td>
+                                <td class="Catégorie">Stratégie</td>
+                                <td class="Langue">Français</td>
+                                <td class="Âge">10+</td>
+                                <td class="Durée">40mn</td>
+                                <td class="Joueur">2-6</td>
+                                <td id="action2"><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Oriflamme</td>
+                                <td><img src="./assets/medias/oriflamme.png" height="100"></td>
+                                <td>Stratégie</td>
+                                <td>Français</td>
+                                <td>10+</td>
+                                <td>20mn</td>
+                                <td>3-5</td>
+                                <td id="action3"><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Skull</td>
+                                <td><img src="./assets/medias/skull.png" height="100"></td>
+                                <td>Stratégie</td>
+                                <td>Français</td>
+                                <td>10+</td>
+                                <td>30mn</td>
+                                <td>3-6</td>
+                                <td id="action4"><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>The Crew</td>
+                                <td><img src="./assets/medias/the_crew.png" height="100"></td>
+                                <td>Coopératif</td>
+                                <td>Français</td>
+                                <td>10+</td>
+                                <td>20mn</td>
+                                <td>3-5</td>
+                                <td id="action5"><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <button class="create" onclick="tableau_selection()">Selection</button>
+                    <button class="create" onclick="tableau_deselection()">Deselection</button>
+
+                    <table id="tableau_resultat" class="styled-table">
+                        <thead>
+
+                            <tr>
+                                <td>Choisissez</td>
+                                <td>Nom</td>
+                                <td>Image</td>
+                                <td>Catégorie</Canvas></td>
+                                <td>Langue(s)</td>
+                                <td>Âge</td>
+                                <td>Durée</td>
+                                <td>Joueur(s)</td>
+                                <td>Action</td>
+                            </tr>
+                            <tr>
+                                <td class="Checkbox"></td>
+                                <td class="Nom"></td>
+                                <td class="Image"></td>
+                                <td class="Catégorie"></td>
+                                <td class="Langue"></td>
+                                <td class="Âge"></td>
+                                <td class="Durée"></td>
+                                <td class="Joueur"></td>
+                                <td id="action1"><i class="fas fa-ellipsis-v"></i></td>
+                            </tr>
+
+                        </thead>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+    </header>
+
+    <script src="./assets/js/games.js"></script>
+</body>
+
+</html>

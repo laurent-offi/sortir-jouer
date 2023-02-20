@@ -1,0 +1,110 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #2B2B4A;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.form-container h1 {
+    font-size: 1.2rem;
+}
+
+.form-container img {
+    width: 15rem;
+}
+
+.form-container form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form-container form input {
+    background-color: #3C3E69;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: white;
+    margin: 0.5rem 0 1rem 0;
+    outline: none;
+}
+
+.form-container form button {
+    width: 35%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.2rem solid #3B3866;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
+    user-select: none;
+}
+
+.form-container form button:hover {
+    background-color: #3B3866;
+}
+
+.form-container .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .center button i {
+    color: #FEA163;
+}
+
+.form-container form .password-container {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.form-container form .password-eye-container {
+    background-color: #27273A;
+    width: 15%;
+    cursor: pointer;;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.9rem;
+    color: white;
+    margin: 0.5rem 0 1rem 0;
+    border-top-left-radius:0!important;
+    border-bottom-left-radius: 0!important;
+    text-align: center;
+}
+
+.form-container form .password-container input#password {
+    border-top-right-radius:0!important;
+    border-bottom-right-radius: 0!important;
+    width: 85%
+}
+
+.form-container form > i.fas {
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

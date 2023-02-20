@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
   var calendarEl = document.getElementById('calendar');
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -14,13 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
     selectMirror: true,
     select: function (arg) {
       var title = prompt('Nom du jeu :');
-      var location = prompt('Lieu de la session :');
-      calendar.addEvent({
-        title: title + " (A " + location + ")",
-        start: arg.start,
-        end: arg.end,
-        allDay: arg.allDay, 
-      })
+      if(title) {
+        var location = prompt('Lieu de la session :');
+      }
+      if(title && location) {
+        calendar.addEvent({
+          title: title + " (A " + location + ")",
+          start: arg.start,
+          end: arg.end,
+          allDay: arg.allDay, 
+        })
+      }
       calendar.unselect()
     },
     
@@ -30,20 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     editable: true,
-    dayMaxEvents: true, // allow "more" link when too many events
-    events: [
-      {
-        title: 'Long Event',
-        start: '2022-11-02',
-        end: '2022-11-05'
-      },
-      {
-        title: 'Long Event',
-        start: '2022-11-04',
-        end: '2022-11-04'
-      }
-    ]
+    dayMaxEvents: true,
+
+    
   });
 
+  lecture_api();
+
   calendar.render();
+
 });

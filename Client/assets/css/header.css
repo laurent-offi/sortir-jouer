@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+header nav {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    width: 5%;
+    border-radius: 20%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.header-container img {
+    width: 20rem;
+}
